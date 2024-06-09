@@ -1,0 +1,75 @@
+/* General Page Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeInBackground 1s ease-out;
+}
+
+/* Layout Adjustments */
+.journal .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.journal h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: slideInFromTop 0.5s ease-out both;
+}
+
+/* PDF Viewer Styles */
+.journal iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.journal iframe:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .journal .container,
+    iframe {
+        width: 95%;
+    }
+
+    .journal h2 {
+        font-size: 20px;
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

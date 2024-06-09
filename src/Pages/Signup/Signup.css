@@ -1,0 +1,111 @@
+.form-container-signup {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-container-signup div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container-signup h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container-signup h3 {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container-signup form {
+    max-width: 1000px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.form-container-signup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    text-align: start;
+    width: 200px;
+}
+
+.form-container-signup input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-container-signup input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.form-container-signup button {
+    background-color: #0056b3;
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.form-container-signup button:hover {
+    background-color: #003d82;
+}
+
+.submition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.signin .login-button {
+    background-color: transparent;
+    margin-left: 10px;
+    padding: 0;
+    color: #003d82;
+    font-weight: bold;
+    border: none;
+    width: auto;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

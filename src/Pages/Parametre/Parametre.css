@@ -1,0 +1,101 @@
+.form-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.parameters-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    animation: slideInFromBottom 0.5s ease-out both;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 90%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.25);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #003d82;
+}
+
+.submit-button:active {
+    background-color: #002a5e;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .parameters-form {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

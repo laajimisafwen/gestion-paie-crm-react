@@ -1,0 +1,124 @@
+.form-container-signin {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container-signin h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container-signin h3 {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container-signin form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.form-container-signin label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-container-signin input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-container-signin input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.form-container-signin button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container-signin button:hover {
+    background-color: #003d82;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.signup button {
+    background: none;
+    border: none;
+    color: #0056b3;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+p[style='color: red'] {
+    color: #d32f2f;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .form-container-signin {
+        padding: 40px;
+    }
+
+    .form-container-signin h3 {
+        font-size: 16px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
